@@ -1,0 +1,137 @@
+html, body {
+    height: 100%;
+}
+
+body
+{
+	margin: 0px;
+	padding: 0px;
+    background-color: #EEEEEE;
+    font-family: "Open Sans", "Helvetica Neue", Ubuntu, Arial, sans-serif;
+    font-size: 90%;
+}
+
+a {
+    color: #006600;
+    text-decoration: none;
+}
+    a:hover {
+    color: #006600;
+    text-decoration: underline;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: bold;
+    color: #444;
+    border-bottom: 2px solid #F3F3F3;
+    padding-bottom: 0.1em;
+}
+
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+    font-weight: normal;
+    color: green;
+}
+
+.nav {
+/*padding: 0;
+margin: 28px 0 28px;*/
+list-style: none;
+font-size: 1.3em;
+border: 0px solid #dcddde;
+overflow: hidden;
+background-color: #ffffff;
+border-radius: 0px;
+/*box-shadow: 0 0 8px #eee;*/
+    background-color: #444;
+}
+
+.nav ul {
+    padding: 0px;
+    -webkit-padding-start: 0px;
+    display: block;
+    list-style-type:none;
+    margin:0;
+    padding:0;
+}
+
+#outercontainer
+{
+position: relative;
+	margin: 0 auto;
+	border-style:solid;
+	border-bottom-width:1px;
+    border-top-width:1px;
+	border-left-width:10px;
+    border-right-width:10px;
+    border-color: #DDDDDD;
+    border-radius: 2px;
+	width: 800px;
+    background-color: white;
+}
+
+#container
+{
+position: relative;
+	margin: 0 auto;
+	width: 760px;
+    background-color: white;
+}
+
+/*
+.xxx
+{
+    display:inline;
+    border-style:solid;
+    border-left-width:10px;
+    border-right-width:10px;
+    box-shadow: 0 0 8px #eee;
+}
+*/
+
+.nav li {
+    text-decoration: none;
+    float: left;
+    border-right: 2px solid #F3F3F3;
+    /*border-left: 1px solid #DDDDDD;*/
+    padding-left: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 15px;
+}
+
+.nav a
+{
+text-decoration:none;
+color: #F3F3F3;
+}
+
+.nav li:hover {
+    background: #666;
+    color: #FFF;
+}
+
+#footer
+{
+	font-size: 80%;
+	color: #888;
+	background-color: #EEE
+}
+
+#footerleft
+{
+	float: left;
+	width: 370px;
+}
+
+#footerright
+{
+	float: right;
+	width: 370px;
+}
+
+#footerbottom
+{
+	width: auto;
+}
+
