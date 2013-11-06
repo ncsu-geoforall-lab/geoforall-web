@@ -1,3 +1,7 @@
+* {
+
+}
+
 html, body {
     height: 100%;
 }
@@ -33,19 +37,38 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
     color: green;
 }
 
+/* main menu navigation*/
+
+nav {
+  margin: 0;
+  padding: 0;
+}
+
 .nav {
+  margin: 0;
+  padding: 0;
 /*padding: 0;
 margin: 28px 0 28px;*/
 list-style: none;
 font-size: 1.3em;
 border: 0px solid #dcddde;
-overflow: hidden;
+overflow: auto;
 background-color: #ffffff;
 border-radius: 0px;
 /*box-shadow: 0 0 8px #eee;*/
     background-color: #444;
 }
 
+.nav li {
+    text-decoration: none;
+    float: left;
+    border-right: 2px solid #F3F3F3;
+    /*border-left: 1px solid #DDDDDD;*/
+    padding-left: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 15px;
+}
 .nav ul {
     padding: 0px;
     -webkit-padding-start: 0px;
@@ -54,6 +77,34 @@ border-radius: 0px;
     margin:0;
     padding:0;
 }
+
+nav li {
+  margin: 0;
+  padding: 0;
+}
+
+nav li:first-child {
+}
+
+/* we want last item separated from empty area,
+so add the last border*/
+/*
+nav li:last-child {
+    border-right: none;
+}
+*/
+
+.nav a {
+text-decoration:none;
+color: #F3F3F3;
+}
+
+nav li:hover {
+    background: #666;
+    color: #FFF;
+}
+
+/* the body styling */
 
 #outercontainer
 {
@@ -88,28 +139,6 @@ position: relative;
     box-shadow: 0 0 8px #eee;
 }
 */
-
-.nav li {
-    text-decoration: none;
-    float: left;
-    border-right: 2px solid #F3F3F3;
-    /*border-left: 1px solid #DDDDDD;*/
-    padding-left: 15px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    padding-right: 15px;
-}
-
-.nav a
-{
-text-decoration:none;
-color: #F3F3F3;
-}
-
-.nav li:hover {
-    background: #666;
-    color: #FFF;
-}
 
 #footer
 {
