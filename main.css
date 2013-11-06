@@ -11,6 +11,22 @@ body
     font-size: 90%;
 }
 
+#banner {
+    width: auto;
+    height: 208px;
+    background-image: url("banner-map.png");
+    background-repeat: no-repeat;
+    background-position: center top;
+    vertical-align: bottom;
+}
+
+#banner p {
+    position: absolute;
+    top:130px;
+    left:80px;
+    font-size: 150%;
+}
+
 a {
     color: #006600;
     text-decoration: none;
