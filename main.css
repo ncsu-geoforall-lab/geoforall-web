@@ -8,8 +8,8 @@ html, body {
 
 body
 {
-	margin: 0px;
-	padding: 0px;
+    margin: 0px;
+    padding: 0px;
     background-color: #EEEEEE;
     font-family: "Open Sans", "Helvetica Neue", Ubuntu, Arial, sans-serif;
     font-size: 90%;
@@ -129,23 +129,23 @@ nav li:hover {
 #outercontainer
 {
 position: relative;
-	margin: 0 auto;
-	border-style:solid;
-	border-bottom-width:1px;
+    margin: 0 auto;
+    border-style:solid;
+    border-bottom-width:1px;
     border-top-width:1px;
-	border-left-width:10px;
+    border-left-width:10px;
     border-right-width:10px;
     border-color: #DDDDDD;
     border-radius: 2px;
-	width: 800px;
+    width: 800px;
     background-color: white;
 }
 
 #container
 {
 position: relative;
-	margin: 0 auto;
-	width: 760px;
+    margin: 0 auto;
+    width: 760px;
     background-color: white;
 }
 
@@ -160,27 +160,35 @@ position: relative;
 }
 */
 
-#footer
-{
-	font-size: 80%;
-	color: #888;
-	background-color: #EEE
+footer {
+    margin: 0;
+    padding: 0px;
+    font-size: 80%;
+    color: #888;
+    background-color: #EEE
 }
 
-#footerleft
-{
-	float: left;
-	width: 370px;
+footer nav ul {
+    margin: 0;
+    padding: 0;
+    overflow: auto;
+    list-style-type: none;
 }
 
-#footerright
-{
-	float: right;
-	width: 370px;
+footer nav li {
+  height: 1.5em;
+  float: left;
+  margin-right: 0px;
+  border-right: 1px solid #aaa;
+  padding: 0 20px;
 }
 
-#footerbottom
-{
-	width: auto;
+footer nav li:last-child {
+  border-right: none;
+}
+
+footer nav li:hover {
+    background: #EEE;
+    color: #FFF;
 }
 
