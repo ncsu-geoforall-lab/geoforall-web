@@ -192,3 +192,23 @@ footer nav li:hover {
     color: #FFF;
 }
 
+.image-list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+
+.image-list li {
+    padding: 10px;
+    overflow: auto;
+}
+
+.image-list li img {
+    width: 100px;
+    height: 100px;
+    float: left;
+    margin: 0 15px 0 0;
+    background: red;
+}
+
