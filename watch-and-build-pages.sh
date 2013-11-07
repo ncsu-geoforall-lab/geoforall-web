@@ -17,6 +17,8 @@
 # to open the generated web page (e.g., ``../osgeorel/index.html``) in
 # the web browser or just reload the page you work on.
 #
+# End this script using Ctrl+C (on Linux).
+#
 # Dependencies
 # ============
 # You need to install watchdog Python package which provides
