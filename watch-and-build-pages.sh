@@ -36,5 +36,6 @@
 # that it is missing but we don't need it, so there is nothing to worry
 # about.
 
-watchmedo shell-command --patterns="*.html;*.css" --recursive --wait --command='./build-pages.sh' .
+
+watchmedo shell-command --patterns="*.html;*.css;*.js;*.json" --recursive --wait --command='./build-pages.sh' .
 

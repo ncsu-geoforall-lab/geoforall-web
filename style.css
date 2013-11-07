@@ -116,6 +116,7 @@ nav li:hover {
 footer {
     position: relative;
     margin: 0;
+    margin-top: 15px;
     padding: 0px;
     font-size: 80%;
     color: #888;
@@ -171,3 +172,10 @@ footer nav li:hover {
     margin: 0 15px 0 0;
     background: red;
 }
+
+/* bigger padding for dd */
+
+dd {
+    padding: 4px;
+}
+

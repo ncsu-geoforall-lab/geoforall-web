@@ -2,14 +2,14 @@
 
 OUTDIR=../osgeorel
 
-for FILE in index.html publications.html
+for FILE in index.html publications.html about.html
 do
     cat head.html > $OUTDIR/$FILE
     cat $FILE >> $OUTDIR/$FILE
     cat foot.html >> $OUTDIR/$FILE
 done
 
-for FILE in *.css *.png
+for FILE in *.css *.png *.json *.js
 do
     cp --update $FILE $OUTDIR
 done
