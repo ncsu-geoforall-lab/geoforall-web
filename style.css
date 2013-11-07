@@ -10,16 +10,13 @@ body {
 
 /* site top image */
 
-#banner {
-    width: auto;
+#header-image {
     height: 200px;
-    background-image: url("banner-map.png");
+    background-image: url("header-map.png");
     background-repeat: no-repeat;
-    background-position: center top;
-    vertical-align: bottom;
 }
 
-#banner p {
+#header-image p {
     position: absolute;
     top:100px;
     left:70px;
@@ -159,7 +156,6 @@ footer nav li:hover {
     list-style-type: none;
 }
 
-
 .image-list li {
     padding: 10px;
     overflow: auto;
@@ -170,7 +166,7 @@ footer nav li:hover {
     height: 100px;
     float: left;
     margin: 0 15px 0 0;
-    background: red;
+    background: white;
 }
 
 .image-list li p {
@@ -179,6 +175,23 @@ footer nav li:hover {
 
 .image-list li h4 {
     margin: 5px;
+}
+
+/* list with images and text under them */
+
+.logo-list li {
+    float: left;
+    text-align: center;
+    width: 200px;
+}
+
+.logo-list ul {
+  list-style-type: none;
+}
+
+.logo-list p {
+    margin: 0px;
+    padding: 0px;
 }
 
 /* bigger padding for dd */

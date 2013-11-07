@@ -26,3 +26,10 @@ body {
     border-color: #DDDDDD;
 }
 
+
+#header-image {
+    width: auto;
+    background-position: center top;
+    vertical-align: bottom;
+}
+
