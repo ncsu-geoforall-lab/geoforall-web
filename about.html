@@ -4,9 +4,6 @@
 
 <h3>Global ICA-OSGeo Research and Education Laboratories Network</h3>
 <p>Move the slider on the right to see how ICA-OSGeo Network expanded.</p>
-<link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.5.1/leaflet.css" />
-<!--[if lte IE 8]><link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.5.1/leaflet.ie.css" /><![endif]-->
-<link rel="stylesheet" href="http://code.jquery.com/ui/1.9.2/themes/base/jquery-ui.css"type="text/css">
 
 <div id="map" style="width: 100%; height: 500px"></div>
 
@@ -24,7 +21,7 @@
     L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
         minZoom: 1,
         maxZoom: 18,
-        attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC BY-SA</a>'
+        attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap<\/a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC BY-SA<\/a>'
     }).addTo(map);
     
     function onEachFeature(feature, layer) {
@@ -64,6 +61,4 @@
     //map.setZoom(1);
     map.setView([0, 0], 2);
 </script>
-
-</div>
 
