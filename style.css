@@ -173,6 +173,14 @@ footer nav li:hover {
     background: red;
 }
 
+.image-list li p {
+    margin: 0px;
+}
+
+.image-list li h4 {
+    margin: 5px;
+}
+
 /* bigger padding for dd */
 
 dd {
