@@ -2,7 +2,7 @@
 
 OUTDIR=../osgeorel
 
-for FILE in index.html publications.html about.html courses.html
+for FILE in index.html publications.html about.html courses.html software.html projects.html
 do
     cat head.html > $OUTDIR/$FILE
     cat $FILE >> $OUTDIR/$FILE
