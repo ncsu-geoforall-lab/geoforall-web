@@ -156,7 +156,6 @@ footer nav li:hover {
     list-style-type: none;
 }
 
-
 .image-list li {
     padding: 10px;
     overflow: auto;
@@ -167,7 +166,24 @@ footer nav li:hover {
     height: 100px;
     float: left;
     margin: 0 15px 0 0;
-    background: red;
+    background: white;
+}
+
+/* list with images and text under them */
+
+.logo-list li {
+    float: left;
+    text-align:center;
+    width: 200px;
+}
+
+.logo-list ul {
+  list-style-type: none;
+}
+
+.logo-list p {
+    margin: 0px;
+    padding: 0px;
 }
 
 /* bigger padding for dd */
