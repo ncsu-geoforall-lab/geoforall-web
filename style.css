@@ -182,7 +182,11 @@ footer nav li:hover {
 .logo-list li {
     float: left;
     text-align: center;
-    width: 200px;
+    width: 100px;
+}
+
+.logo-list li img {
+    width: 100px;
 }
 
 .logo-list ul {
