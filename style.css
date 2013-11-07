@@ -88,16 +88,6 @@ nav li {
     padding-right: 15px;
 }
 
-/*
-nav li:first-child {
-    border-right: none;
-}
-
-nav li:last-child {
-    border-right: none;
-}
-*/
-
 .nav a {
 text-decoration:none;
 color: #F3F3F3;
@@ -138,10 +128,6 @@ footer nav li {
     padding: 0 20px;
 }
 
-footer nav li:last-child {
-border  -right: none;
-}
-
 footer nav li:hover {
     background: #EEE;
     color: #FFF;
@@ -179,18 +165,24 @@ footer nav li:hover {
 
 /* list with images and text under them */
 
+
+/* must be without ul to work */
+.logo-list {
+    list-style-type: none;
+    overflow: auto;
+    margin: 0px;
+    padding: 0px;
+}
+
 .logo-list li {
     float: left;
     text-align: center;
-    width: 100px;
+    width: 150px;
+    padding: 20px;
 }
 
 .logo-list li img {
-    width: 100px;
-}
-
-.logo-list ul {
-  list-style-type: none;
+    height: 100px;
 }
 
 .logo-list p {
