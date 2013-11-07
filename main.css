@@ -162,6 +162,7 @@ position: relative;
 
 footer {
     margin: 0;
+    margin-top: 15px;
     padding: 0px;
     font-size: 80%;
     color: #888;

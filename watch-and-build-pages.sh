@@ -5,5 +5,5 @@
 # libyaml-dev (+libyaml-0-2)
 
 
-watchmedo shell-command --patterns="*.html;*.css" --recursive --wait --command='sh build-pages.sh' .
+watchmedo shell-command --patterns="*.html;*.css;*.js;*.json" --recursive --wait --command='sh build-pages.sh' .
 
