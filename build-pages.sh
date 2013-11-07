@@ -9,7 +9,7 @@ do
     cat foot.html >> $OUTDIR/$FILE
 done
 
-for FILE in *.css *.png *.json *.js *.jpg
+for FILE in *.css *.png *.json *.js
 do
     cp --update $FILE $OUTDIR
 done
