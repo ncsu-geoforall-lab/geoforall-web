@@ -28,7 +28,7 @@
     }).addTo(map);
     
     function onEachFeature(feature, layer) {
-        var popupContent = feature.properties.html;
+        var popupContent = feature.properties.name;
         layer.bindPopup(popupContent);
     }
     
