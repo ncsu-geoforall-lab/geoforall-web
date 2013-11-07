@@ -1,20 +1,14 @@
-* {
 
-}
+/* global and body settings */
 
-html, body {
-    height: 100%;
-}
-
-body
-{
-    margin: 0px;
-    padding: 0px;
+body {
     background-color: #EEEEEE;
     font-family: "Open Sans", "Helvetica Neue", Ubuntu, Arial, sans-serif;
     font-size: 90%;
     color: black;
 }
+
+/* site top image */
 
 #banner {
     width: auto;
@@ -36,6 +30,8 @@ body
     text-shadow: 0 0 20px white, 0 0 18px white, 0 0 16px white, 0 0 14px white, 0 0 12px white, 0 0 10px white, 0 0 8px white, 0 0 6px white;
 }
 
+/* links */
+
 a {
     color: #006600;
     text-decoration: none;
@@ -45,6 +41,7 @@ a {
     text-decoration: underline;
 }
 
+/* headings */
 
 h1, h2, h3, h4, h5, h6 {
     font-weight: bold;
@@ -53,34 +50,37 @@ h1, h2, h3, h4, h5, h6 {
     padding-bottom: 0.1em;
 }
 
+/* links inside the headings - the standard settings */
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
-    font-weight: normal;
+    font-weight: bold;
     color: green;
 }
 
-/* main menu navigation*/
+/* main menu navigation */
 
 nav {
-  margin: 0;
-  padding: 0;
-}
-
-.nav {
-  margin: 0;
-  padding: 0;
-/*padding: 0;
-margin: 28px 0 28px;*/
-list-style: none;
-font-size: 1.3em;
-border: 0px solid #dcddde;
-overflow: auto;
-background-color: #ffffff;
-border-radius: 0px;
-/*box-shadow: 0 0 8px #eee;*/
+    margin: 0;
+    padding: 0;
+    overflow: auto;
+    border: 0px solid #dcddde;
+    background-color: #ffffff;
+    border-radius: 0px;
+    /*box-shadow: 0 0 8px #eee;*/
     background-color: #444;
+    font-size: 1.3em;
 }
 
-.nav li {
+nav ul {
+    margin:0;
+    padding:0;
+    padding: 0px;
+    display: block;
+    list-style-type:none;
+}
+
+nav li {
+    margin: 0;
+    padding: 0;
     text-decoration: none;
     float: left;
     border-right: 2px solid #F3F3F3;
@@ -90,25 +90,12 @@ border-radius: 0px;
     padding-bottom: 5px;
     padding-right: 15px;
 }
-.nav ul {
-    padding: 0px;
-    display: block;
-    list-style-type:none;
-    margin:0;
-    padding:0;
-}
 
-nav li {
-  margin: 0;
-  padding: 0;
-}
-
-nav li:first-child {
-}
-
-/* we want last item separated from empty area,
-so add the last border*/
 /*
+nav li:first-child {
+    border-right: none;
+}
+
 nav li:last-child {
     border-right: none;
 }
@@ -124,43 +111,10 @@ nav li:hover {
     color: #FFF;
 }
 
-/* the body styling */
-
-#outercontainer
-{
-position: relative;
-    margin: 0 auto;
-    border-style:solid;
-    border-bottom-width:1px;
-    border-top-width:1px;
-    border-left-width:10px;
-    border-right-width:10px;
-    border-color: #DDDDDD;
-    border-radius: 2px;
-    width: 800px;
-    background-color: white;
-}
-
-#container
-{
-position: relative;
-    margin: 0 auto;
-    width: 760px;
-    background-color: white;
-}
-
-/*
-.xxx
-{
-    display:inline;
-    border-style:solid;
-    border-left-width:10px;
-    border-right-width:10px;
-    box-shadow: 0 0 8px #eee;
-}
-*/
+/* footer */
 
 footer {
+    position: relative;
     margin: 0;
     padding: 0px;
     font-size: 80%;
@@ -168,29 +122,35 @@ footer {
     background-color: #EEE
 }
 
+/* footer navigation */
+
 footer nav ul {
     margin: 0;
     padding: 0;
+    background-color: #ffffff;
     overflow: auto;
     list-style-type: none;
 }
 
 footer nav li {
-  height: 1.5em;
-  float: left;
-  margin-right: 0px;
-  border-right: 1px solid #aaa;
-  padding: 0 20px;
+    height: 1.5em;
+    float: left;
+    margin-right: 0px;
+    border-right: 1px solid #aaa;
+    padding: 0 20px;
 }
 
 footer nav li:last-child {
-  border-right: none;
+border  -right: none;
 }
 
 footer nav li:hover {
     background: #EEE;
     color: #FFF;
 }
+
+
+/* list with images and headings */
 
 .image-list {
     margin: 0;
@@ -211,4 +171,3 @@ footer nav li:hover {
     margin: 0 15px 0 0;
     background: red;
 }
-
