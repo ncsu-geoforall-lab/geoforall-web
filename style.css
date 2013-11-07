@@ -169,11 +169,19 @@ footer nav li:hover {
     background: white;
 }
 
+.image-list li p {
+    margin: 0px;
+}
+
+.image-list li h4 {
+    margin: 5px;
+}
+
 /* list with images and text under them */
 
 .logo-list li {
     float: left;
-    text-align:center;
+    text-align: center;
     width: 200px;
 }
 
@@ -184,14 +192,6 @@ footer nav li:hover {
 .logo-list p {
     margin: 0px;
     padding: 0px;
-}
-
-.image-list li p {
-    margin: 0px;
-}
-
-.image-list li h4 {
-    margin: 5px;
 }
 
 /* bigger padding for dd */
