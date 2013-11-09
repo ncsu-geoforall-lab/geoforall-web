@@ -15,7 +15,7 @@ do
     cp --update $FILE $OUTDIR
 done
 
-for DIR in publication_pictures courses_pictures logos
+for DIR in publication_pictures courses_pictures logos pubpdf
 do
     cp --update --recursive $DIR $OUTDIR
 done
