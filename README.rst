@@ -54,8 +54,29 @@ Enter unityid and unitypassword. Note that you can do several commits
 and then push them all together.
 
 
-Publishing pages
-----------------
+Publishing pages by building on server and using Git
+----------------------------------------------------
+
+If you are doing this for the first time run use::
+
+    ./build-on-server-first.sh yourusername
+
+Since then use::
+
+    ./build-on-server.sh yourusername
+
+Run these scripts on your local machine. You will be asked to
+enter your password for the server and for the unityid and password
+to authenticate download from NCSU GitHub.
+
+Note that this method ensures consistency because only committed changes
+will be published and you cannot publish your changes without merging
+with changes of other contributors (in other words, you cannot overwrite
+their published changes).
+
+
+Publishing pages by copying built pages to server (obsolete)
+--------------------------------------------------------------
 
 Upload pages to the afs space. The script will use your server home directory
 to store compressed pages and will uncompress them and copy them to www
