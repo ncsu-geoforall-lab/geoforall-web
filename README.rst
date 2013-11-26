@@ -57,11 +57,19 @@ and then push them all together.
 Publishing pages by building on server and using Git
 ----------------------------------------------------
 
-If you are doing this for the first time run use::
+If you are doing this for the first time connect to server using SSH
+and create necessary directories and clone the repository::
 
-    ./build-on-server-first.sh yourusername
+    mkdir osgeorel-web-build
+    cd osgeorel-web-build
+    mkdir osgeorel
+    git clone git@github.ncsu.edu:osgeorel/osgeorel-web.git osgeorel-web
 
-Since then use::
+You will be asked if you want to add the NCSU GitHub server to the list
+of trusted severs (using fingerprint). Now you are prepared to use
+the update and build script from your local machine.
+
+Since then just use from your local machine::
 
     ./build-on-server.sh yourusername
 
