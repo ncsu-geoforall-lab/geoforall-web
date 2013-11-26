@@ -1,6 +1,10 @@
 #!/bin/sh
 
-OUTDIR=../osgeorel
+# builds pages from source
+
+OUTDIR=build
+
+mkdir -p $OUTDIR
 
 for FILE in index.html publications.html about.html courses.html software.html projects.html contact.html
 do
@@ -19,4 +23,3 @@ for DIR in publications_pictures courses_pictures projects_pictures logos public
 do
     cp --update --recursive $DIR $OUTDIR
 done
-

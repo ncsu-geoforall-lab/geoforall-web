@@ -14,18 +14,20 @@ set -e
 
 USERNAME=$1
 DESTDIR=.
-WEBDIR=/afs/unity.ncsu.edu/www/cnr/gis/
+WEBDIR=/afs/unity.ncsu.edu/www/cnr/gis/osgeorel
+DISTNAME=osgeorel
+TARNAME=$DISTNAME.tar.gz
+BUIDDIR=build
 
-cd ..
-tar czvf osgeorel.tar.gz osgeorel
+tar czvf $TARNAME $BUIDDIR
 
-scp osgeorel.tar.gz $USERNAME@ras01.cos.ncsu.edu:$DESTDIR
+scp $TARNAME.tar.gz $USERNAME@ras01.cos.ncsu.edu:$DESTDIR
 
 # it does not clean the old directory
 
 ssh $USERNAME@ras01.cos.ncsu.edu "
-tar xvf osgeorel.tar.gz;
-cp osgeorel/index.html osgeorel/index.php;
-cp --recursive osgeorel $WEBDIR;
+tar xvf $TARNAME
+cp $DISTNAME/index.html $DISTNAME/index.php
+cp --recursive --update --no-target-directory --verbose $DISTNAME $WEBDIR
 ";
 

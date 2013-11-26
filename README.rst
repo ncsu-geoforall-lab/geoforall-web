@@ -30,19 +30,18 @@ Clone (download) the repository::
 Enter unityid and unitypassword.
 
 Repository is downloaded into ``osgeorel-web`` directory.
-Create additional directory for building pages named ``osgeorel``.
-But go to the ``osgeorel-web`` where the repository content is.
 
-::
+Now you can go to the ``osgeorel-web`` directory and make your changes::
 
-    mkdir osgeorel
     cd osgeorel-web
 
 Make changes.
 
-Build web pages::
+Build web pages once you want to see them::
 
     ./build-pages.sh
+
+The built pages are in ``build`` subdirectory.
 
 Commit you changes (save them in local repository) and push them into
 the remote repository (NCSU GitHub)::
@@ -50,8 +49,9 @@ the remote repository (NCSU GitHub)::
     git commit -am "changes in this and that"
     git push
 
-Enter unityid and unitypassword. Note that you can do several commits
-and then push them all together.
+If you don't have public SSH key of your local computer in NCSU GitHub,
+you need to enter your unityid and unitypassword. Note that you can do
+several commits and then push them all together.
 
 
 Publishing pages by building on server and using Git
@@ -60,10 +60,8 @@ Publishing pages by building on server and using Git
 If you are doing this for the first time connect to server using SSH
 and create necessary directories and clone the repository::
 
-    mkdir osgeorel-web-build
-    cd osgeorel-web-build
-    mkdir osgeorel
-    git clone git@github.ncsu.edu:osgeorel/osgeorel-web.git osgeorel-web
+    cd ~
+    git clone git@github.ncsu.edu:osgeorel/osgeorel-web.git
 
 You will be asked if you want to add the NCSU GitHub server to the list
 of trusted severs (using fingerprint). Now you are prepared to use
@@ -91,7 +89,11 @@ on the server first.
 Creating SSH key
 ----------------
 
-Connect to server using SSH. Go to `.shh` directory::
+If you want SSH key to connect from the server to NCSU GitHub, connect
+to server using SSH. These steps should work the same for sever or your
+local machine.
+
+Go to `.shh` directory::
 
     cd ~/.shh
 

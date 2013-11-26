@@ -13,21 +13,17 @@ fi
 set -e
 
 USERNAME=$1
-DESTDIR=.
-WEBDIR=/afs/unity.ncsu.edu/www/cnr/gis/
-WORKDIR=osgeorel-web-build
+WEBDIR=/afs/unity.ncsu.edu/www/cnr/gis/osgeorel
 REPDIR=osgeorel-web
-
-# it does not clean the old directory
+BUIDDIR=build
 
 ssh $USERNAME@ras01.cos.ncsu.edu "
-cd $WORKDIR
 cd $REPDIR
 git pull
 ./build-pages.sh
-cd ..
 # only PHP index is supported
-cp osgeorel/index.html osgeorel/index.php;
-cp --recursive --verbose osgeorel $WEBDIR;
+cp $BUIDDIR/index.html $BUIDDIR/index.php
+# it does not clean the old files
+cp --recursive --update --no-target-directory --verbose $BUIDDIR $WEBDIR
 ";
 
