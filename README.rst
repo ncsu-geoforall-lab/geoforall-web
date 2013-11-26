@@ -77,10 +77,41 @@ in the repository.
 
 These scripts use Git SSH access and you need to use SSH key to
 connect to NCSU GitHub from the server. So, you need to create a SSH key
-on the server first (https://help.github.com/articles/generating-ssh-keys).
+on the server first.
+
+
+Creating SSH key
+----------------
+
+Connect to server using SSH. Go to `.shh` directory::
+
+    cd ~/.shh
+
+Check whether you have a key already using `ls` the file names would be
+something like `id_rsa.pub` and `id_rsa`. If you don't have any,
+generate one::
+
+    ssh-keygen -t rsa -C "yourunityid@ncsu.edu"
+
+It is enough if you use the default file name and enter the empty (no)
+password.
+
+Then see the public key::
+
+    cat id_rsa.pub
+
+And copy the whole file contents to clipboard. The go to SHH settings
+on NCSU GitHub at https://github.ncsu.edu/settings/ssh and add a key.
+Put the whole content of `id_rsa.pub` file to *key* field. Fill *title*
+with the name you are used to use for the sever just to know which key
+it is.
+
+The longer and complete guide (including setting the password for SSH key)
+is available at https://help.github.com/articles/generating-ssh-keys.
+
 
 Publishing pages by copying built pages to server (obsolete)
---------------------------------------------------------------
+------------------------------------------------------------
 
 Upload pages to the afs space. The script will use your server home directory
 to store compressed pages and will uncompress them and copy them to www
