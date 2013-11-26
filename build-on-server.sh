@@ -1,9 +1,8 @@
 #!/bin/sh
 
 # Uploads the changes to the afs space on server.
-# You will be asked for your password to server once.
-# Moreover, you will be asked for your user name and password for
-# NCSU GitHub.
+# You will be asked for your password to server if you don't use ssh key.
+# On server you need to use ssh key to access NCSU GitHub.
 
 if [ $# -ne 1 ]; then
     echo 1>&2 "Usage: $0 username"
@@ -22,6 +21,7 @@ REPDIR=osgeorel-web
 # it does not clean the old directory
 
 ssh $USERNAME@ras01.cos.ncsu.edu "
+set -e;
 cd $WORKDIR
 cd $REPDIR
 git pull
@@ -29,6 +29,6 @@ git pull
 cd ..
 # only PHP index is supported
 cp osgeorel/index.html osgeorel/index.php;
-cp --recursive osgeorel $WEBDIR;
+cp --recursive --verbose osgeorel $WEBDIR;
 ";
 

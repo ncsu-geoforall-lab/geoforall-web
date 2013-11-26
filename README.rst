@@ -72,8 +72,12 @@ to authenticate download from NCSU GitHub.
 Note that this method ensures consistency because only committed changes
 will be published and you cannot publish your changes without merging
 with changes of other contributors (in other words, you cannot overwrite
-their published changes).
+their published changes). It will also ensure that you include all files
+in the repository.
 
+These scripts use Git SSH access and you need to use SSH key to
+connect to NCSU GitHub from the server. So, you need to create a SSH key
+on the server first (https://help.github.com/articles/generating-ssh-keys).
 
 Publishing pages by copying built pages to server (obsolete)
 --------------------------------------------------------------

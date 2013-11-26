@@ -24,12 +24,13 @@ REPDIR=osgeorel-web
 ssh $USERNAME@ras01.cos.ncsu.edu "
 mkdir $WORKDIR
 cd $WORKDIR
-git clone https://github.ncsu.edu/osgeorel/osgeorel-web.git $REPDIR
+mkdir osgeorel;
+git clone git@github.ncsu.edu:osgeorel/osgeorel-web.git $REPDIR;
 cd $REPDIR
 ./build-pages.sh
 cd ..
 # only PHP index is supported
 cp osgeorel/index.html osgeorel/index.php;
-cp --recursive osgeorel $WEBDIR;
+cp --recursive --verbose osgeorel $WEBDIR;
 ";
 
