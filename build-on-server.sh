@@ -21,7 +21,6 @@ REPDIR=osgeorel-web
 # it does not clean the old directory
 
 ssh $USERNAME@ras01.cos.ncsu.edu "
-set -e;
 cd $WORKDIR
 cd $REPDIR
 git pull
