@@ -6,7 +6,7 @@ OUTDIR=build
 
 mkdir -p $OUTDIR
 
-for FILE in index.html publications.html about.html courses.html software.html projects.html contact.html
+for FILE in `ls *.html|grep -v foot|grep -v head`
 do
     cat head.html > $OUTDIR/$FILE
     echo "<!-- This is a generated file. Do not edit. -->" >> $OUTDIR/$FILE
