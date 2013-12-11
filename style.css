@@ -215,11 +215,20 @@ dd {
     width: 90%;
 }
 
-.video {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+figure .video {
+    width: 100%;
     height: 345px;
-    width: 70%;
     background-color: #ffffff;
 }
+
+figure .image {
+    width: 100%;
+}
+
+figure {
+    text-align: center;
+    display: table;
+    max-width: 50%; /* demo; set some amount (px or %) if you can */
+    margin: 10px auto; /* not needed unless you want centered */
+}
+
