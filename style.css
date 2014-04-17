@@ -243,3 +243,8 @@ figure {
     margin: 10px auto; /* not needed unless you want centered */
 }
 
+iframe {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
