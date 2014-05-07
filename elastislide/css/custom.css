@@ -1,7 +1,8 @@
 /* Custom Elastislide Styling */
 
 .elastislide_custom .elastislide-horizontal {
-	padding: 1px 1px;
+	margin: 10px 10px;
+	padding: 2px 2px;
 }
 
 .elastislide_custom .elastislide-wrapper:before,
