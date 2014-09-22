@@ -11,14 +11,14 @@ body {
 /* site top image */
 
 #header-image {
-    height: 200px;
+    height: 150px;
     background-image: url("header-map.png");
     background-repeat: no-repeat;
 }
 
 #header-image p {
     position: absolute;
-    top:100px;
+    top:50px;
     left:70px;
     font-size: 150%;
     font-weight: bold;
