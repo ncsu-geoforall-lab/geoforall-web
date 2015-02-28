@@ -14,6 +14,9 @@ do
     cat foot.html >> $OUTDIR/$FILE
 done
 
+# for backwards compatibility
+cp $OUTDIR/tangible-landscape.html $OUTDIR/tangeoms.html
+
 for FILE in *.css *.png *.json *.js
 do
     cp --update $FILE $OUTDIR
