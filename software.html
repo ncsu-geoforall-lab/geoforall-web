@@ -1,5 +1,8 @@
 <h1>Software</h1>
-<h2>Software we are using</h2>
+
+<h2 id="using">Software we are using</h2>
+  We would like to acknowledge
+  the developers and communities behind the software we use for our research.
   <ul class="image-list">
     <li>
       <img src="./logos/grass_logo.png" alt="GRASS GIS logo">
@@ -7,12 +10,13 @@
       <p><a href="http://grass.osgeo.org/">GRASS GIS</a>
          is a free and open source Geographic Information System (GIS)
          used for geospatial data management and analysis, image processing,
-         spatial modeling, and visualization. GRASS GIS is all purpose GIS although it is focused mainly
-         on scientific GIS applications involving big data.
+         spatial modeling, and visualization. GRASS GIS is all purpose GIS
+         although many of its users are focused mainly
+         on scientific GIS applications or backend processing involving big data.
          GRASS GIS is the Open Source Geospatial Foundation
          (<a href="http://osgeo.org">OSGeo</a>) project.</p>
       <p>We contribute to the GRASS GIS project by developing new features
-         and as a part of GRASS GIS community we support faculty and students using GRASS.
+         and as a part of GRASS GIS community we support faculty and students using GRASS GIS.
          The NCSU OSGeoREL leader, Dr. Helena Mitasova, is the co-author of the book
          <a href="http://www.grassbook.org/">Open Source GIS: A GRASS GIS Approach</a>.</p>
       <p>Feel free to <a href="about.html#contact">contact us</a>
@@ -33,10 +37,83 @@
          It is easy to use, fast and extensible by plugins. </p>
     </li>
   </ul>
-<!--
-<h2>Software development</h2>
--->
-<h2>Source code repositories</h2>
+
+<h2 id="developing">Software we are developing</h2>
+  These are highlights of software we developed or are currently developing.
+  For a complete list, browse through source code repositories linked in the next section.
+  <ul class="image-list">
+    <li>
+      <img src="./logos/grass_logo.png" alt="GRASS GIS logo">
+      <h4><a href="http://grass.osgeo.org/">GRASS GIS</a></h4>
+      <p>GRASS GIS is a multipurpose GIS used in wide range of applications.
+      We contribute to the GRASS GIS project by developing new features,
+      fixing issues and maintaining source code.</p>
+    </li>
+    <li>
+      <img src="./software_pictures/r3flow.png" alt="r3.flow output">
+      <h4><a href="http://grass.osgeo.org/grass71/manuals/addons/r3.flow.html">r3.flow</a></h4>
+      <p>r3.flow is a GRASS GIS module computes 3D flow lines and 3D flow accumulation.
+      The module will be included in GRASS GIS 7.1 and now it is available
+      in the development version of GRASS GIS (trunk).</p>
+    </li>
+    <li>
+      <img src="./software_pictures/rfutures.png" alt="patches grown by r.futures">
+      <h4><a href="http://grass.osgeo.org/grass70/manuals/addons/r.futures.html">r.futures</a></h4>
+      <p>r.futures is a group of modules in a GRASS GIS Addons repository which implements
+      the FUTURES model developed by Meentemeyer et al. for modeling urban growth.</p>
+    </li>
+    <li>
+      <img src="./software_pictures/rlocalrelief.png" alt="r.local.relief output shade">
+      <h4><a href="http://grass.osgeo.org/grass70/manuals/addons/r.local.relief.html">r.local.relief</a></h4>
+      <p>r.local.relief is a GRASS GIS addon for creating a local relief model from elevation map.
+      Usages include archeology and various terrain analysis tasks in general.</p>
+    </li>
+    <li>
+      <img src="./software_pictures/rshadedrelief.png" alt="r.shaded.relief colorful output">
+      <h4><a href="http://grass.osgeo.org/grass70/manuals/addons/r.shaded.pca.html">r.shaded.pca</a></h4>
+      <p>r.shaded.pca is a GRASS GIS addon which creates relief shades from
+      various directions and combines them into RGB composition.
+      The combined shades highlight terrain features
+      which wouldn't be visible using standard shading technique.
+      This tool can be used in archeology as well as general terrain analysis.</p>
+    </li>
+    <li>
+      <img src="./software_pictures/rskyview.jpg" alt="r.skyview output shade">
+      <h4><a href="http://grass.osgeo.org/grass70/manuals/addons/r.skyview.html">r.skyview</a></h4>
+      <p>r.skyview is a GRASS GIS addon which uses sky-view factor visualization technique
+      to create beautiful relief shade which can be used in many analytical applications.</p>
+    </li>
+    <li>
+      <img src="./software_pictures/rsamplecategory.png" alt="points on category raster">
+      <h4><a href="http://grass.osgeo.org/grass70/manuals/addons/r.sample.category.html">r.sample.category</a></h4>
+      <p>r.sample.category is a GRASS GIS addon for creating sampling points
+      from each category (class) in a raster map. This is a handy tool
+      for stratified sampling.</p>
+    </li>
+    <li>
+      <img src="./logos/grass_logo.png" alt="GRASS GIS logo">
+      <h4><a href="http://grass.osgeo.org/grass70/manuals/addons/r.sun.daily.html">r.sun.daily</a></h4>
+      <p>r.sun.daily is a GRASS GIS addon for computing solar radiation
+      for a sequence of days during a year.</p>
+    </li>
+    <li>
+      <img src="./software_pictures/rsunhourly.png" alt="r.sun.hourly output in 3D">
+      <h4><a href="http://grass.osgeo.org/grass70/manuals/addons/r.sun.hourly.html">r.sun.hourly</a></h4>
+      <p>r.sun.hourly is a GRASS GIS addon for computing solar radiation during a day.</p>
+    </li>
+  </ul>
+
+<h2 id="repositories">Source code repositories</h2>
+    The article
+    <a href="http://www.nature.com/nmeth/journal/v4/n3/full/nmeth0307-189.html">Social software</a>
+    in Nature Methods (2007) says <em>"Software [...] is important for the method's implementation [...] Such software [...] must be made available to readers upon publication."&nbsp;</em>
+    Furthermore, the article
+    <a href="http://www.nature.com/nmeth/journal/v11/n3/full/nmeth.2880.html">Software with impact</a>
+    in Nature Methods (2014) concludes with
+    <em>"An open implementation that supports reproducible research not only provides confidence [...]
+    but increases the likelihood that other researchers can use and build upon it."&nbsp;</em>
+    Thus, when we create software or even simple scripts during our research,
+    we share the software including its source code.
   <ul class="image-list">
     <li>
       <img src="./logos/octocat-original.png" alt="GitHub octocat">
@@ -45,21 +122,6 @@
       We manage there our projects' source codes. Specifically, we use GitHub for
       projects which are not part of any other free and open source project
       but we want to share them with community.</p>
-    </li>
-    <li>
-      <!--
-      Red octocat created using:
-        convert original.png -fuzz 70% -fill red -opaque black red.png
-      Usage and modification should be OK according to
-        http://octodex.github.com/faq.html
-      if it is a link to GitHub.
-      -->
-      <img src="./logos/octocat-red.png" alt="GitHub octocat in red">
-      <h4><a href="https://github.ncsu.edu/osgeorel">NCSU OSGeoREL organization at NCSU GitHub Enterprise</a></h4>
-      <p>NCSU provides us with access to GitHub Enterprise which is not publicly accessible.
-      We manage there only internal one-purpose projects which are not suitable for publishing.
-      If you are part of NCSU, you can still access some of them but anyway majority of our projects
-      is available in other repositories.</p>
     </li>
     <li>
       <img src="./logos/grass_logo.png" alt="GRASS GIS logo">
@@ -75,5 +137,20 @@
       GRASS Addons Subversion (SVN) repository is available online in the same way as GRASS GIS code itself
       through GRASS GIS <a href="https://trac.osgeo.org/grass/">Trac</a>
       or <a href="http://svn.osgeo.org/grass/grass-addons/">SVN HTML browser</a>.</p>
+    </li>
+    <li>
+      <!--
+      Red octocat created using:
+        convert original.png -fuzz 70% -fill red -opaque black red.png
+      Usage and modification should be OK according to
+        http://octodex.github.com/faq.html
+      if it is a link to GitHub.
+      -->
+      <img src="./logos/octocat-red.png" alt="GitHub octocat in red">
+      <h4><a href="https://github.ncsu.edu/osgeorel">NCSU OSGeoREL organization at NCSU GitHub Enterprise</a></h4>
+      <p>NCSU provides us with access to GitHub Enterprise which is not publicly accessible.
+      We manage there only internal one-purpose projects which are not suitable for publishing.
+      If you are part of NCSU, you can still access some of them but anyway majority of our projects
+      is available in other repositories.</p>
     </li>
   </ul>
