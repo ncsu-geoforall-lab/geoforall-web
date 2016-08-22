@@ -1,7 +1,7 @@
-NCSU OSGeoREL web site
-======================
+NCSU GeoForAll Lab web site
+===========================
 
-This is a repository with web pages for NCSU OSGeoREL which are
+This is a repository with web pages for NCSU GeoForAll Lab which are
 placed at http://gis.ncsu.edu/osgeorel/.
 
 
