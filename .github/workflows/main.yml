@@ -20,6 +20,6 @@ jobs:
         server: geospatial.ncsu.edu
         username: geoforall@geospatial.ncsu.edu
         password: ${{ secrets.ftp_password }}
-        protocol: ftps
+        protocol: ftp
         local-dir: build/
         dry-run: true
