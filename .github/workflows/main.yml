@@ -21,6 +21,6 @@ jobs:
         username: geoforall@geospatial.ncsu.edu
         password: ${{ secrets.ftp_password }}
         protocol: ftps
-        local-dir: build/publication_pictures/
-        server-dir: ./publication_pictures/ 
+        local-dir: build/publications_pictures/
+        server-dir: ./publications_pictures/ 
         dry-run: true
