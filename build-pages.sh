@@ -22,7 +22,7 @@ do
     cp --update $FILE $OUTDIR
 done
 
-for DIR in publications_pictures courses_pictures projects_pictures software_pictures logos publications elastislide foss4g-2014-spatio
+for DIR in publications_pictures courses_pictures projects_pictures software_pictures logos publications elastislide foss4g-2014-spatio test
 do
     cp --update --recursive $DIR $OUTDIR
 done
