@@ -17,7 +17,7 @@ jobs:
     - name: Sync files
       uses: SamKirkland/FTP-Deploy-Action@4.0.0
       with:
-        server: web14cp.unity.ncsu.edu
+        server: geospatial.ncsu.edu/geoforall
         username: geoforall@geospatial.ncsu.edu
         password: ${{ secrets.ftp_password }}
         protocol: ftps
