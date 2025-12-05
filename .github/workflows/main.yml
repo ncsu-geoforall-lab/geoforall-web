@@ -15,7 +15,7 @@ jobs:
       run: ./build-pages.sh
     
     - name: Sync files
-      uses: SamKirkland/FTP-Deploy-Action@4.3.6
+      uses: SamKirkland/FTP-Deploy-Action@v4.3.6
       with:
         server: geospatial.ncsu.edu
         username: geoforall@geospatial.ncsu.edu
